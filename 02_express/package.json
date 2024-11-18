@@ -1,0 +1,23 @@
+{
+  "name": "express-tutorial",
+  "version": "1.0.0",
+  "description": "basic crud operations with node and express crash course",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [
+    "express",
+    "node"
+  ],
+  "author": "jezeem.dev",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
