@@ -1,5 +1,6 @@
 import express from 'express';
 import cors from 'cors';
+import healthcheckRouter  from './routes/healthcheck.routes.js';
 
 // create an app from express
 const app = express()
@@ -19,7 +20,10 @@ app.use(express.urlencoded({extended: true, limit:"16kb"}))
 // serving assets
 app.use(express.static("public"))
 
-// export this express app so we can use it elsewhere
+// routes
+app.use("/api/v1/healthcheck", healthcheckRouter)
+
+
 export { app }
 
 
