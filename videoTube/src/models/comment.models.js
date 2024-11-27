@@ -21,11 +21,3 @@ const commentSchema = new Schema(
 commentSchema.plugin(mongooseAggregatePaginate);
 
 export const Comment = mongoose.model("Comment", commentSchema);
-
-/*
-content string
-  createdAt Date
-  updatedAt Date
-  video ObjectId videos
-  owner ObjectId users
-*/
