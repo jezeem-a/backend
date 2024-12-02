@@ -77,7 +77,7 @@ userSchema.methods.generateAccessToken = function() {
   }, process.env.ACCESS_TOKEN_SECRET, { expiresIn: process.env.ACCESS_TOKEN_EXPIRY});
 };
 
-userSchema.methods.generaterefreshToken = function() {
+userSchema.methods.generateRefreshToken = function() {
   // short lived access token 
   return jwt.sign({
     // only id
